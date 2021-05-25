@@ -1,8 +1,52 @@
+/* Polices page */
+@font-face {
+  font-family: "robotoregular";
+  src: url("Roboto-Regular-webfont.eot");
+  src: url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Regular-webfont.woff2") format("woff2"), url("Roboto-Regular-webfont.woff") format("woff"), url("Roboto-Regular-webfont.ttf") format("truetype"), url("Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Couleurs de la Page */
 .logo {
   display: block;
   margin: 10px auto;
   width: 25%;
   height: 25%;
+}
+
+#search {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50px;
+  background-color: #d3d1d1;
+}
+#search .searchfield {
+  border-style: none;
+  margin-left: 5px;
+  background-color: #d3d1d1;
+  font-weight: bolder;
+  font-family: "robotoregular", sans-serif;
+  color: #000;
+}
+#search .mapmarker {
+  margin-left: 5%;
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  #search .mapmarker {
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .logo {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
