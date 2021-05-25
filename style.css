@@ -1,3 +1,115 @@
+@charset "UTF-8";
+/* Polices page */
+@font-face {
+  font-family: "robotoregular";
+  src: url("./fonts/Roboto/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot");
+  src: url("./fonts/Roboto/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Roboto/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2") format("woff2"), url("./fonts/Roboto/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff") format("woff"), url("./fonts/Roboto/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf") format("truetype"), url("./fonts/Roboto/web fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Couleurs de la Page */
+/* Polices */
+/* Héritage */
+.menu .button {
+  box-shadow: 5px 5px 10px #d3d1d1;
+}
 
+.logo {
+  display: block;
+  margin: 10px auto;
+  width: 25%;
+  height: 25%;
+}
+
+#search {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50px;
+  background-color: #d3d1d1;
+}
+#search .searchfield {
+  border-style: none;
+  margin-left: 5px;
+  background-color: #d3d1d1;
+  font-weight: bolder;
+  font-family: "robotoregular", sans-serif;
+  color: #000;
+}
+#search .mapmarker {
+  margin-left: 5%;
+  margin-right: 0;
+}
+
+.menu {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+.menu h2 {
+  font-family: "robotoregular", sans serif;
+  font-size: 20px;
+  background-color: #f2f2f2;
+}
+.menu p {
+  width: 90%;
+  font-family: "robotoregular", sans serif;
+  font-size: 16px;
+  opacity: 0.7;
+  background-color: #f2f2f2;
+  margin: 0 0 45px 0;
+}
+.menu .button {
+  background-color: #ff79da;
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  width: 20%;
+  height: 100px;
+  border-radius: 35px;
+  padding: 17px 5px;
+  margin-bottom: 63px;
+}
+.menu .button .explorebutton {
+  font-family: "robotoregular", sans serif;
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  #search .mapmarker {
+    margin-left: 10%;
+  }
+
+  .menu {
+    text-align: center;
+  }
+  .menu .button {
+    width: 28%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .logo {
+    width: 50%;
+    height: 50%;
+  }
+
+  .menu {
+    text-align: center;
+  }
+  .menu .button {
+    width: 60%;
+    max-width: 220px;
+    border-radius: 35px;
+  }
+  .menu .button .explorebutton {
+    margin-left: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
