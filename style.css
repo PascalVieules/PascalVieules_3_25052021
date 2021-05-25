@@ -7,6 +7,7 @@
   font-style: normal;
 }
 /* Couleurs de la Page */
+/* Polices */
 .logo {
   display: block;
   margin: 10px auto;
@@ -35,6 +36,42 @@
 #search .mapmarker {
   margin-left: 5%;
   margin-right: 0;
+}
+
+.menu {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+.menu h2 {
+  font-family: "robotoregular", sans serif;
+  font-size: 20px;
+  background-color: #f2f2f2;
+}
+.menu p {
+  width: 90%;
+  font-family: "robotoregular", sans serif;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  margin: 0 0 45px 0;
+}
+.menu .button {
+  background-color: #ff79da;
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  width: 20%;
+  height: 100px;
+  border-radius: 35px;
+  padding: 17px 5px;
+  margin-bottom: 63px;
+}
+.menu .button .explorebutton {
+  font-family: "robotoregular", sans serif;
+  color: white;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1024px) {
