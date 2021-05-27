@@ -10,7 +10,7 @@
 /* Couleurs de la Page */
 /* Polices */
 /* Héritage */
-.operation .operationcard, .menu .button {
+.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button {
   box-shadow: 5px 5px 10px #d3d1d1;
 }
 
@@ -136,12 +136,12 @@
   margin-left: 10%;
   font-size: 26px;
   position: relative;
+  padding-top: 20px;
 }
 .eat .restaurant {
   display: flex;
   justify-content: space-between;
-  padding-top: 2em;
-  height: 450px;
+  height: 300px;
 }
 .eat .restaurant .new {
   background-color: #99e2d0;
@@ -161,7 +161,7 @@
   width: 325px;
   height: 250px;
   justify-content: space-between;
-  margin-left: 3%;
+  margin: 0 2%;
   position: relative;
 }
 .eat .restaurant .card {
@@ -174,7 +174,7 @@
   font-weight: bold;
   font-size: 14px;
   font-family: "robotoregular", sans serif;
-  margin-top: -10px;
+  margin-top: -1em;
   margin-right: 20px;
   padding-left: 7%;
   display: flex;
@@ -234,6 +234,16 @@
     margin-left: -1.5%;
     margin-top: 1.6%;
   }
+
+  .eat .restaurant {
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+  }
+  .eat .restaurant .restaurantcard {
+    margin: 1% 3% 5% 3%;
+    width: 40%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .logo {
@@ -257,7 +267,7 @@
     flex-direction: column;
   }
   .operation .operationnumber {
-    margin-top: 4.5%;
+    margin-top: 1.15em;
   }
   .operation .operationcard {
     width: 90%;
@@ -268,7 +278,12 @@
     padding-left: 5%;
   }
 
+  .eat .restaurant {
+    flex-direction: column;
+    height: 100%;
+  }
   .eat .restaurant .restaurantcard {
+    margin: 10px auto;
     width: 94%;
   }
 }
