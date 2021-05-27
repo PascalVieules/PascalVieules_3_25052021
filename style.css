@@ -10,7 +10,7 @@
 /* Couleurs de la Page */
 /* Polices */
 /* Héritage */
-.menu .button {
+.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button {
   box-shadow: 5px 5px 10px #d3d1d1;
 }
 
@@ -62,7 +62,7 @@
   width: 90%;
   font-family: "robotoregular", sans serif;
   font-size: 16px;
-  opacity: 0.7;
+  opacity: 0.6;
   background-color: #f2f2f2;
   margin: 0 0 45px 0;
 }
@@ -77,8 +77,132 @@
 }
 .menu .button .explorebutton {
   font-family: "robotoregular", sans serif;
-  color: white;
+  color: #FFF;
   text-decoration: none;
+}
+
+.operation .operationtitle {
+  font-family: "robotoregular", sans serif;
+  margin-left: 10%;
+  font-size: 26px;
+  position: relative;
+}
+.operation .select {
+  display: flex;
+  justify-content: center;
+}
+.operation .operationnumber {
+  background-color: #9356dc;
+  color: #FFF;
+  border-radius: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  margin-left: -2.5%;
+  margin-top: 1.1%;
+}
+.operation .operationcard {
+  width: 25%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 0.5% 2%;
+  margin: 0 2% 2% 5%;
+  align-items: center;
+}
+.operation .operationcard:hover {
+  background-color: #d3d1d1;
+}
+.operation .operationcard:hover .restauranticon {
+  color: #9356dc;
+}
+.operation .operationcard .titlecard {
+  padding-left: 1%;
+  font-family: "robotoregular", sans serif;
+  color: black;
+  width: 100%;
+}
+.operation .operationcard .restauranticon {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.eat {
+  background-color: #f2f2f2;
+}
+.eat .operationtitle {
+  font-family: "robotoregular", sans serif;
+  margin-left: 10%;
+  font-size: 26px;
+  position: relative;
+  padding-top: 20px;
+}
+.eat .restaurant {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+}
+.eat .restaurant .new {
+  background-color: #99e2d0;
+  color: #2c9c81;
+  font-weight: bold;
+  font-family: "robotoregular", sans serif;
+  padding: 3px 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.eat .restaurant .restaurantcard {
+  border-radius: 20px;
+  display: flex;
+  background-color: #FFF;
+  flex-direction: column;
+  width: 325px;
+  height: 250px;
+  justify-content: space-between;
+  margin: 0 2%;
+  position: relative;
+}
+.eat .restaurant .card {
+  text-decoration: none;
+}
+.eat .restaurant figure {
+  margin: 0;
+}
+.eat .restaurant .legend {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "robotoregular", sans serif;
+  margin-top: -1em;
+  margin-right: 20px;
+  padding-left: 7%;
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+.eat .restaurant .legend .lieu {
+  margin-top: 2%;
+}
+.eat .restaurant .legend .lieu h3 {
+  margin-bottom: 0;
+}
+.eat .restaurant .legend .lieu p {
+  opacity: 0.6;
+  font-weight: normal;
+  margin-top: 0;
+}
+.eat .restaurant .legend .heart {
+  margin-top: 25px;
+  font-size: 25px;
+  opacity: 0.6;
+}
+.eat .photo {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -91,6 +215,34 @@
   }
   .menu .button {
     width: 28%;
+  }
+
+  .operation {
+    margin-left: 1%;
+  }
+  .operation .operationtitle {
+    font-size: 18px;
+    margin-left: 5%;
+  }
+  .operation .operationcard {
+    width: 35%;
+    padding: 0;
+    margin: 12px 15px;
+    font-size: 14px;
+  }
+  .operation .operationnumber {
+    margin-left: -1.5%;
+    margin-top: 1.6%;
+  }
+
+  .eat .restaurant {
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+  }
+  .eat .restaurant .restaurantcard {
+    margin: 1% 3% 5% 3%;
+    width: 40%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -109,6 +261,30 @@
   }
   .menu .button .explorebutton {
     margin-left: 0;
+  }
+
+  .operation .select {
+    flex-direction: column;
+  }
+  .operation .operationnumber {
+    margin-top: 1.15em;
+  }
+  .operation .operationcard {
+    width: 90%;
+    padding: 0;
+    margin: 10px 20px;
+  }
+  .operation .operationcard .titlecard {
+    padding-left: 5%;
+  }
+
+  .eat .restaurant {
+    flex-direction: column;
+    height: 100%;
+  }
+  .eat .restaurant .restaurantcard {
+    margin: 10px auto;
+    width: 94%;
   }
 }
 
