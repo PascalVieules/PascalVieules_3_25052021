@@ -207,6 +207,7 @@
 
 footer {
   background-color: #353535;
+  padding: 20px 40px;
 }
 footer .footer {
   display: flex;
@@ -318,6 +319,10 @@ footer .footer__icon {
   .eat .restaurant .restaurantcard {
     margin: 10px auto;
     width: 94%;
+  }
+
+  footer {
+    padding: 1%;
   }
 }
 

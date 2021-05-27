@@ -231,6 +231,7 @@ $font2: 'shrikhand', sans serif;
     }
     footer{
         background-color: #353535;
+        padding: 20px 40px;
         .footer{
             display: flex;
             flex-direction: column;
@@ -350,5 +351,8 @@ $font2: 'shrikhand', sans serif;
                 width: 94%;
             }
         }
+    }
+    footer{
+        padding: 1%;
     }
 }
