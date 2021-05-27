@@ -143,6 +143,16 @@
   padding-top: 2em;
   height: 450px;
 }
+.eat .restaurant .new {
+  background-color: #99e2d0;
+  color: #2c9c81;
+  font-weight: bold;
+  font-family: "robotoregular", sans serif;
+  padding: 3px 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 .eat .restaurant .restaurantcard {
   border-radius: 20px;
   display: flex;
@@ -152,6 +162,7 @@
   height: 250px;
   justify-content: space-between;
   margin-left: 3%;
+  position: relative;
 }
 .eat .restaurant .card {
   text-decoration: none;
@@ -255,6 +266,10 @@
   }
   .operation .operationcard .titlecard {
     padding-left: 5%;
+  }
+
+  .eat .restaurant .restaurantcard {
+    width: 94%;
   }
 }
 

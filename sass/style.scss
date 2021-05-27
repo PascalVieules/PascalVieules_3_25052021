@@ -165,6 +165,16 @@ $font2: 'shrikhand', sans serif;
         justify-content: space-between;
         padding-top: 2em;
         height: 450px;
+        .new{
+            background-color: $colortertiary;
+            color: #2c9c81;
+            font-weight: bold;
+            font-family: $font;
+            padding: 3px 10px;
+            position: absolute;
+            right: 10px;
+            top:10px;
+        }
         .restaurantcard {
             border-radius: 20px;
             display:flex;
@@ -174,6 +184,7 @@ $font2: 'shrikhand', sans serif;
             height: 250px;
             justify-content: space-between;
             margin-left: 3%;
+            position:relative;
           }
         .card {
             text-decoration: none;
@@ -282,6 +293,13 @@ $font2: 'shrikhand', sans serif;
            .titlecard{
             padding-left: 5%;
            }
+        }
+    }
+    .eat{
+        .restaurant{
+            .restaurantcard {
+                width: 94%;
+            }
         }
     }
 }
