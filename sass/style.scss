@@ -18,7 +18,8 @@ $colortertiary: #99e2d0;
 $colorbackground1: #d3d1d1;
 $colorbackground2: #f2f2f2;
 $colorfont: #000;
-$opacity:0.7;
+$opacity:0.6;
+$colordefault: #FFF;
 
 /* Polices */
 $font: 'robotoregular', sans serif;
@@ -94,7 +95,7 @@ $font2: 'shrikhand', sans serif;
         @extend %shadow;
         .explorebutton{
         font-family: $font;
-        color: white;
+        color: $colordefault;
         text-decoration: none;
         
         }
@@ -114,7 +115,7 @@ $font2: 'shrikhand', sans serif;
     }
     .operationnumber{
         background-color: $colorprimary;
-        color: #fff;
+        color: $colordefault;
         border-radius: 20px;
         padding: 5px 10px;
         position: absolute;
@@ -165,26 +166,55 @@ $font2: 'shrikhand', sans serif;
         padding-top: 2em;
         height: 450px;
         .restaurantcard {
+            border-radius: 20px;
             display:flex;
+            background-color: $colordefault;
             flex-direction: column;
-            height: 450px;
+            width: 325px;
+            height: 250px;
             justify-content: space-between;
+            margin-left: 3%;
           }
         .card {
-            border-radius: 20px;
-            width: 300px;
-            height: 50%;
+            text-decoration: none;
           }
+        figure{
+            margin:0;
+        }
         .legend{
             font-weight: bold;
             font-size: 14px;
-            margin-left: 20px;
-            margin-top : 12px;
-            padding-top: 1em;
+            font-family: $font;
+            margin-top: -10px;
+            margin-right: 20px;
+            padding-left: 7%;
             display:flex;
             justify-content: space-between;
             color:$colorfont;
+            .lieu{
+                margin-top: 2%;
+            }
+            .lieu h3{
+                margin-bottom:0;
+            }
+            .lieu p {
+                opacity: $opacity;
+                font-weight: normal;
+                margin-top:0;
+            }
+            .heart{
+                margin-top: 25px;
+                font-size: 25px;
+                opacity: $opacity;
+            }
           }
+      }
+      .photo{  
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 100%;
+        height: 11rem;
+        object-fit: cover;
       }
     }
 @media only screen and (max-width: 1024px){
