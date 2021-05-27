@@ -315,6 +315,7 @@ footer .footer__icon {
   .eat .restaurant {
     flex-direction: column;
     height: 100%;
+    padding: 0 0 7% 0;
   }
   .eat .restaurant .restaurantcard {
     margin: 10px auto;
