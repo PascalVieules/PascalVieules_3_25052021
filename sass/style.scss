@@ -1,5 +1,3 @@
-@import "palettestyle.scss";
-
 /* Polices page */
 @font-face {
     font-family: 'robotoregular';
@@ -31,6 +29,9 @@ $font2: 'shrikhand', sans serif;
 %shadow{
     box-shadow: 5px 5px 10px #d3d1d1;
 }
+
+/* Imports SCSS */
+@import "palettestyle.scss";
 
 .logo {
     display: block;
