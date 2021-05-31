@@ -1,0 +1,69 @@
+/* Couleurs de la Page */
+$colorprimary: #9356dc;
+$colorsecondary: #ff79da;
+$colortertiary: #99e2d0;
+$colorbackground1: #d3d1d1;
+$colorbackground2: #f2f2f2;
+$colorfont: #000;
+$opacity:0.6;
+$colordefault: #FFF;
+/* Polices */
+$font: 'robotoregular', sans serif;
+$font2: 'shrikhand', sans serif;
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    
+    .return{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 500px;
+        color: $colorfont;
+    }
+    .arrow{
+        font-size: 2rem; 
+        margin: 10px auto;    
+    }
+    .logo{
+        display: block;
+        margin: 10px;
+        width: 25%;
+        height: 25%;
+    
+    }
+}
+@media only screen and (max-width: 1024px){
+    .header{
+        
+        .arrow{
+            font-size: 1.5rem;
+        }
+        .return{
+            margin-right:30%;
+        }
+        .logo{
+
+        }
+    }
+
+}
+@media only screen and (max-width: 767px){
+
+    .header{
+        justify-content: center;
+        margin-right: 25%;
+        .arrow{
+        font-size: 1rem;
+        }
+        .logo {
+        width: 150px;
+        height: 50%;
+        }
+        .return{
+            margin-right: 35%;
+            margin-left:0;
+        }
+    }
+}

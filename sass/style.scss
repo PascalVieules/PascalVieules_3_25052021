@@ -30,6 +30,9 @@ $font2: 'shrikhand', sans serif;
     box-shadow: 5px 5px 10px #d3d1d1;
 }
 
+/* Imports SCSS */
+@import "palettestyle.scss";
+
 .logo {
     display: block;
     margin: 10px auto;
