@@ -39,6 +39,31 @@
   height: 25%;
 }
 
+@media only screen and (max-width: 1024px) {
+  .header .arrow {
+    font-size: 1.5rem;
+  }
+  .header .return {
+    margin-right: 30%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header {
+    justify-content: center;
+    margin-right: 25%;
+  }
+  .header .arrow {
+    font-size: 1rem;
+  }
+  .header .logo {
+    width: 150px;
+    height: 50%;
+  }
+  .header .return {
+    margin-right: 35%;
+    margin-left: 0;
+  }
+}
 .logo {
   display: block;
   margin: 10px auto;

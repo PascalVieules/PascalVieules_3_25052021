@@ -34,3 +34,36 @@ $font2: 'shrikhand', sans serif;
     
     }
 }
+@media only screen and (max-width: 1024px){
+    .header{
+        
+        .arrow{
+            font-size: 1.5rem;
+        }
+        .return{
+            margin-right:30%;
+        }
+        .logo{
+
+        }
+    }
+
+}
+@media only screen and (max-width: 767px){
+
+    .header{
+        justify-content: center;
+        margin-right: 25%;
+        .arrow{
+        font-size: 1rem;
+        }
+        .logo {
+        width: 150px;
+        height: 50%;
+        }
+        .return{
+            margin-right: 35%;
+            margin-left:0;
+        }
+    }
+}
