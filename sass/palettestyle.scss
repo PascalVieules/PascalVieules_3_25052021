@@ -34,6 +34,17 @@ $font2: 'shrikhand', sans serif;
     
     }
 }
+.photo__restaurant{
+    display: block;
+    margin:0;
+    .background__photo{
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        position: relative;
+    } 
+}
+
 @media only screen and (max-width: 1024px){
     .header{
         
@@ -43,11 +54,9 @@ $font2: 'shrikhand', sans serif;
         .return{
             margin-right:30%;
         }
-        .logo{
 
-        }
     }
-
+    
 }
 @media only screen and (max-width: 767px){
 
