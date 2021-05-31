@@ -10,6 +10,10 @@ $colordefault: #FFF;
 /* Polices */
 $font: 'robotoregular', sans serif;
 $font2: 'shrikhand', sans serif;
+/* Héritage */
+%shadow{
+    box-shadow: 5px 5px 10px #d3d1d1;
+}
 
 .header{
     display: flex;
@@ -44,6 +48,27 @@ $font2: 'shrikhand', sans serif;
         position: relative;
     } 
 }
+.menu__restaurant{
+    background-color: $colorbackground1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 120px;
+    border-radius: 20px;
+    @extend %shadow;
+    h1{
+        font-family: $font2;      
+    }
+    .heart{
+        margin:0 0 0 60%;
+    }
+}
+.entrees{
+    h2{
+       font-family: $font;
+    }
+}
+
 
 @media only screen and (max-width: 1024px){
     .header{
@@ -73,6 +98,15 @@ $font2: 'shrikhand', sans serif;
         .return{
             margin-right: 35%;
             margin-left:0;
+        }
+    }
+    .menu__restaurant{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 0;
+        .heart{
+            margin:0 25px
         }
     }
 }

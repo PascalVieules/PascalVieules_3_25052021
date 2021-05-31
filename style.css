@@ -10,13 +10,18 @@
 /* Couleurs de la Page */
 /* Polices */
 /* Héritage */
-.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button {
+.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button, .menu__restaurant {
   box-shadow: 5px 5px 10px #d3d1d1;
 }
 
 /* Imports SCSS */
 /* Couleurs de la Page */
 /* Polices */
+/* Héritage */
+.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button, .menu__restaurant {
+  box-shadow: 5px 5px 10px #d3d1d1;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -50,6 +55,25 @@
   position: relative;
 }
 
+.menu__restaurant {
+  background-color: #d3d1d1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 120px;
+  border-radius: 20px;
+}
+.menu__restaurant h1 {
+  font-family: "shrikhand", sans serif;
+}
+.menu__restaurant .heart {
+  margin: 0 0 0 60%;
+}
+
+.entrees h2 {
+  font-family: "robotoregular", sans serif;
+}
+
 @media only screen and (max-width: 1024px) {
   .header .arrow {
     font-size: 1.5rem;
@@ -73,6 +97,16 @@
   .header .return {
     margin-right: 35%;
     margin-left: 0;
+  }
+
+  .menu__restaurant {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+  }
+  .menu__restaurant .heart {
+    margin: 0 25px;
   }
 }
 .logo {
