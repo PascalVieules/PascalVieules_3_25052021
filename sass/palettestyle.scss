@@ -11,22 +11,26 @@ $colordefault: #FFF;
 $font: 'robotoregular', sans serif;
 $font2: 'shrikhand', sans serif;
 
-header{
+.header{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    
     .return{
         display: flex;
         align-items: center;
-        font-size: 2rem;
-        color:$colorfont;
-        position:relative;
         margin-left: 20px;
+        margin-right: 500px;
+        color: $colorfont;
     }
-    h1{
-        font-family: $font2;
-        font-size: 4rem;
-        font-weight:lighter;
-        margin: 0;
-        text-align: center;
+    .arrow{
+        font-size: 2rem; 
+        margin: 10px auto;    
+    }
+    .logo{
+        display: block;
+        margin: 10px;
+        width: 25%;
+        height: 25%;
+    
     }
 }

@@ -17,24 +17,26 @@
 /* Imports SCSS */
 /* Couleurs de la Page */
 /* Polices */
-header {
+.header {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
-header .return {
+.header .return {
   display: flex;
   align-items: center;
-  font-size: 2rem;
-  color: #000;
-  position: relative;
   margin-left: 20px;
+  margin-right: 500px;
+  color: #000;
 }
-header h1 {
-  font-family: "shrikhand", sans serif;
-  font-size: 4rem;
-  font-weight: lighter;
-  margin: 0;
-  text-align: center;
+.header .arrow {
+  font-size: 2rem;
+  margin: 10px auto;
+}
+.header .logo {
+  display: block;
+  margin: 10px;
+  width: 25%;
+  height: 25%;
 }
 
 .logo {
