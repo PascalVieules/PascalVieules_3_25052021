@@ -10,13 +10,23 @@
 /* Couleurs de la Page */
 /* Polices */
 /* Héritage */
-.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button {
+.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button, .entrees .button {
   box-shadow: 5px 5px 10px #d3d1d1;
 }
 
 /* Imports SCSS */
 /* Couleurs de la Page */
 /* Polices */
+/* Héritage */
+.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button, .entrees .button {
+  box-shadow: 5px 5px 10px #d3d1d1;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -39,12 +49,123 @@
   height: 25%;
 }
 
+.photo__restaurant {
+  display: block;
+  margin: 0;
+  height: 280px;
+}
+.photo__restaurant .background__photo {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.menu__restaurant {
+  background-color: #f2f2f2;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  width: 100%;
+}
+.menu__restaurant .menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 120px;
+}
+.menu__restaurant h1 {
+  font-family: "shrikhand", sans serif;
+}
+.menu__restaurant .heart {
+  margin: 0 10%;
+  font-size: 25px;
+  opacity: 0.6;
+}
+
+.menu__parties {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.entrees {
+  background-color: #f2f2f2;
+  width: 30%;
+  margin: 0 4% 0 auto;
+}
+.entrees .trait {
+  width: 70px;
+  height: 3px;
+  background-color: #99e2d0;
+  margin: -10px 0 30px 45px;
+}
+.entrees h2 {
+  font-family: "robotoregular", sans serif;
+}
+.entrees .operationtitle {
+  font-family: "robotoregular", sans serif;
+  margin-left: 10%;
+  font-size: 26px;
+  position: relative;
+}
+.entrees .button {
+  width: 85%;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-family: "robotoregular", sans serif;
+  border-radius: 20px;
+  padding: 1% 2%;
+  margin: 0 2% 2% 10%;
+}
+.entrees .button .titlecard {
+  margin: 4% 0 0 0;
+}
+.entrees .button .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 2% 0;
+}
+.entrees .button .btn p {
+  opacity: 0.6;
+  margin: 0 0 3% 0;
+}
+.entrees .button .btn .price {
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1024px) {
   .header .arrow {
     font-size: 1.5rem;
   }
   .header .return {
     margin-right: 30%;
+  }
+
+  .menu__parties {
+    flex-direction: column;
+  }
+
+  .entrees {
+    width: 100%;
+    margin: 0 2% 0 2%;
+  }
+  .entrees .operationtitle {
+    margin-left: 2%;
+  }
+  .entrees .trait {
+    margin-left: 2%;
+  }
+  .entrees .button {
+    margin-left: 3%;
+    height: 50px;
+  }
+  .entrees .button .titlecard {
+    margin-top: 0.5%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -62,6 +183,28 @@
   .header .return {
     margin-right: 35%;
     margin-left: 0;
+  }
+
+  .menu__restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+  }
+  .menu__restaurant .menu__title {
+    padding-left: 0;
+  }
+  .menu__restaurant .heart {
+    margin: 0 25px;
+  }
+
+  .menu__parties .entrees .button {
+    height: 70px;
+    padding: 0 2%;
+  }
+  .menu__parties .entrees .button .titlecard {
+    margin-top: 2.5%;
   }
 }
 .logo {
