@@ -41,6 +41,7 @@ $font2: 'shrikhand', sans serif;
 .photo__restaurant{
     display: block;
     margin:0;
+    height: 280px;
     .background__photo{
         object-fit: cover;
         width: 100%;
@@ -49,24 +50,82 @@ $font2: 'shrikhand', sans serif;
     } 
 }
 .menu__restaurant{
-    background-color: $colorbackground1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 120px;
+    background-color: $colorbackground2;
     border-radius: 20px;
-    @extend %shadow;
+    position: absolute;
+    width: 100%;    
+    .menu__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 120px;
+    }
+    
     h1{
         font-family: $font2;      
     }
     .heart{
-        margin:0 0 0 60%;
+        margin:0 10%;
+        font-size: 25px;
+        opacity: $opacity;
     }
 }
+
+.menu__parties{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
 .entrees{
+    background-color: $colorbackground2;
+    width:30%;
+    margin: 0 4% 0 auto;    
+    .trait{
+        width: 70px;
+        height: 3px;
+        background-color: $colortertiary;
+        margin: -10px 0 30px 45px;
+        }
     h2{
        font-family: $font;
+        }
+    .operationtitle{
+            font-family:$font;
+            margin-left: 10%;
+            font-size: 26px;
+            position: relative;
+        }
+    .button{
+        width: 85%;
+        background-color: $colordefault;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        font-family: $font;
+        border-radius: 20px;
+        padding: 1% 2%;
+        margin: 0 2% 2% 10%;
+        @extend %shadow;
+        .titlecard{
+            margin: 4% 0 0 0;
+            }
+        .btn{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 0 2% 0;
+        p{
+                opacity: $opacity;
+                margin: 0 0 3% 0;
+            }
+        .price{
+                font-weight: bold;
+            }
+        }
     }
+
 }
 
 
