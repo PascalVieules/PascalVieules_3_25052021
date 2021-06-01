@@ -10,7 +10,7 @@
 /* Couleurs de la Page */
 /* Polices */
 /* Héritage */
-.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button, .entrees .button {
+.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button, .command__button .btn__command, .entrees .button {
   box-shadow: 5px 5px 10px #d3d1d1;
 }
 
@@ -18,7 +18,7 @@
 /* Couleurs de la Page */
 /* Polices */
 /* Héritage */
-.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button, .entrees .button {
+.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button, .command__button .btn__command, .entrees .button {
   box-shadow: 5px 5px 10px #d3d1d1;
 }
 
@@ -65,7 +65,7 @@ body {
   background-color: #f2f2f2;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 .menu__restaurant .menu__title {
@@ -138,6 +138,63 @@ body {
   font-weight: bold;
 }
 
+.command__button {
+  margin-top: 70px;
+  margin-left: 43%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.command__button .btn__command {
+  background-color: #ff79da;
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  width: 20%;
+  border-radius: 35px;
+  padding: 17px 5px;
+  margin-bottom: 63px;
+}
+.command__button .btn__command .explorebutton {
+  font-family: "robotoregular", sans serif;
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px 40px;
+  width: 100%;
+  position: absolute;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+footer .footer__logo {
+  color: #fff;
+  font-family: "shrikhand", sans serif;
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+}
+footer .footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer__line {
+  margin: 0.5rem 0;
+  font-family: "robotoregular", sans serif;
+}
+footer .footer__link {
+  color: #FFF;
+  text-decoration: none;
+}
+footer .footer__icon {
+  display: inline-block;
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
 @media only screen and (max-width: 1024px) {
   .header .arrow {
     font-size: 1.5rem;
@@ -163,9 +220,22 @@ body {
   .entrees .button {
     margin-left: 3%;
     height: 50px;
+    width: 93%;
   }
   .entrees .button .titlecard {
     margin-top: 0.5%;
+  }
+
+  .command__button {
+    margin-top: 50px;
+    margin-left: 40%;
+  }
+  .command__button .btn__command {
+    width: 30%;
+  }
+
+  footer .footer {
+    padding-top: 0;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -177,7 +247,7 @@ body {
     font-size: 1rem;
   }
   .header .logo {
-    width: 150px;
+    width: 140px;
     height: 50%;
   }
   .header .return {
@@ -202,9 +272,22 @@ body {
   .menu__parties .entrees .button {
     height: 70px;
     padding: 0 2%;
+    width: 96%;
   }
   .menu__parties .entrees .button .titlecard {
     margin-top: 2.5%;
+  }
+
+  .command__button {
+    margin-top: 70px;
+    margin-left: 0;
+  }
+  .command__button .btn__command {
+    width: 150px;
+  }
+
+  footer .footer {
+    padding: 0.5rem;
   }
 }
 .logo {

@@ -56,7 +56,7 @@ body{
     background-color: $colorbackground2;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    position: absolute;
+    position: relative;
     width: 100%;    
     .menu__title{
         display: flex;
@@ -131,6 +131,62 @@ body{
     }
 
 }
+.command__button{
+    margin-top: 70px;
+    margin-left: 43%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    .btn__command{
+        background-color:$colorsecondary;
+        background-image: linear-gradient(to bottom right, $colorsecondary, $colorprimary);
+        width: 20%;
+        border-radius: 35px;
+        padding: 17px 5px;
+        margin-bottom: 63px;
+        @extend %shadow;
+        .explorebutton{
+        font-family: $font;
+        color: $colordefault;
+        text-decoration: none;
+        }
+    }
+}
+footer{
+        background-color: #353535;
+        padding: 20px 40px;
+        width: 100%;
+        position: absolute;
+        .footer{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
+        .footer__logo{
+            color: #fff;
+            font-family: $font2;
+            font-size: 1.2rem;
+            margin: 0 0 1rem;
+        }
+        .footer__list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer__line{
+            margin: 0.5rem 0;
+            font-family: $font;
+        }
+        .footer__link{
+            color: $colordefault;
+            text-decoration: none;
+        }
+        .footer__icon{
+            display: inline-block;
+            width: 1.2rem;
+            margin-right: .5rem;
+        }
+}
 
 
 @media only screen and (max-width: 1024px){
@@ -159,12 +215,26 @@ body{
             .button{
                 margin-left : 3%;
                 height: 50px;
+                width: 93%;
                 .titlecard{
                     margin-top: 0.5%;
                 }
             }
         }
-    
+    .command__button{
+        margin-top: 50px;
+        margin-left: 40%;
+        .btn__command{
+            width: 30%;
+        }
+    }
+    footer{
+        
+        .footer{
+        
+        padding-top: 0;
+        }
+    }
 }
 @media only screen and (max-width: 767px){
 
@@ -175,7 +245,7 @@ body{
         font-size: 1rem;
         }
         .logo {
-        width: 150px;
+        width: 140px;
         height: 50%;
         }
         .return{
@@ -202,10 +272,23 @@ body{
         .button{
             height: 70px;
             padding: 0 2%;
+            width: 96%;
             .titlecard{
                 margin-top: 2.5%;
             }
         }
+    }
+}
+.command__button{
+    margin-top: 70px;
+    margin-left: 0;
+    .btn__command{
+        width:150px;
+    }
+}
+footer{
+    .footer{
+    padding: 0.5rem;
     }
 }
 }
