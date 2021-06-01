@@ -14,7 +14,10 @@ $font2: 'shrikhand', sans serif;
 %shadow{
     box-shadow: 5px 5px 10px #d3d1d1;
 }
-
+body{
+    width:100%;
+    margin: 0;
+}
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -51,7 +54,8 @@ $font2: 'shrikhand', sans serif;
 }
 .menu__restaurant{
     background-color: $colorbackground2;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     position: absolute;
     width: 100%;    
     .menu__title{
@@ -140,6 +144,26 @@ $font2: 'shrikhand', sans serif;
         }
 
     }
+    .menu__parties{
+        flex-direction: column;
+        }
+        .entrees{
+            width: 100%;
+            margin: 0 2% 0 2%;
+            .operationtitle{
+                margin-left: 2%;
+            }
+            .trait{
+                margin-left: 2%;
+            }
+            .button{
+                margin-left : 3%;
+                height: 50px;
+                .titlecard{
+                    margin-top: 0.5%;
+                }
+            }
+        }
     
 }
 @media only screen and (max-width: 767px){
@@ -161,11 +185,27 @@ $font2: 'shrikhand', sans serif;
     }
     .menu__restaurant{
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         padding-left: 0;
+        
+        .menu__title{
+            padding-left: 0;
+        }
         .heart{
             margin:0 25px
         }
     }
+.menu__parties{
+    .entrees{
+        .button{
+            height: 70px;
+            padding: 0 2%;
+            .titlecard{
+                margin-top: 2.5%;
+            }
+        }
+    }
+}
 }

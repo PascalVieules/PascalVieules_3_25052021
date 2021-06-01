@@ -22,6 +22,11 @@
   box-shadow: 5px 5px 10px #d3d1d1;
 }
 
+body {
+  width: 100%;
+  margin: 0;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +63,8 @@
 
 .menu__restaurant {
   background-color: #f2f2f2;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   position: absolute;
   width: 100%;
 }
@@ -139,6 +145,28 @@
   .header .return {
     margin-right: 30%;
   }
+
+  .menu__parties {
+    flex-direction: column;
+  }
+
+  .entrees {
+    width: 100%;
+    margin: 0 2% 0 2%;
+  }
+  .entrees .operationtitle {
+    margin-left: 2%;
+  }
+  .entrees .trait {
+    margin-left: 2%;
+  }
+  .entrees .button {
+    margin-left: 3%;
+    height: 50px;
+  }
+  .entrees .button .titlecard {
+    margin-top: 0.5%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .header {
@@ -159,12 +187,24 @@
 
   .menu__restaurant {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-left: 0;
   }
+  .menu__restaurant .menu__title {
+    padding-left: 0;
+  }
   .menu__restaurant .heart {
     margin: 0 25px;
+  }
+
+  .menu__parties .entrees .button {
+    height: 70px;
+    padding: 0 2%;
+  }
+  .menu__parties .entrees .button .titlecard {
+    margin-top: 2.5%;
   }
 }
 .logo {
