@@ -163,6 +163,7 @@ body {
   .entrees .button {
     margin-left: 3%;
     height: 50px;
+    width: 93%;
   }
   .entrees .button .titlecard {
     margin-top: 0.5%;
@@ -202,6 +203,7 @@ body {
   .menu__parties .entrees .button {
     height: 70px;
     padding: 0 2%;
+    width: 96%;
   }
   .menu__parties .entrees .button .titlecard {
     margin-top: 2.5%;
