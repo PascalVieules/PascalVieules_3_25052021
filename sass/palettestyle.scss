@@ -153,41 +153,8 @@ body{
         }
     }
 }
-footer{
-        background-color: #353535;
-        padding: 20px 40px;
-        width: 100%;
-        position: absolute;
-        .footer{
-            display: flex;
-            flex-direction: column;
-            padding: 1rem;
-        }
-        .footer__logo{
-            color: #fff;
-            font-family: $font2;
-            font-size: 1.2rem;
-            margin: 0 0 1rem;
-        }
-        .footer__list{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .footer__line{
-            margin: 0.5rem 0;
-            font-family: $font;
-        }
-        .footer__link{
-            color: $colordefault;
-            text-decoration: none;
-        }
-        .footer__icon{
-            display: inline-block;
-            width: 1.2rem;
-            margin-right: .5rem;
-        }
-}
+
+
 
 
 @media only screen and (max-width: 1024px){
@@ -229,13 +196,7 @@ footer{
             width: 30%;
         }
     }
-    footer{
-        
-        .footer{
-        
-        padding-top: 0;
-        }
-    }
+    
 }
 @media only screen and (max-width: 767px){
 
@@ -288,9 +249,5 @@ footer{
         width:150px;
     }
 }
-footer{
-    .footer{
-    padding: 0.5rem;
-    }
-}
+
 }

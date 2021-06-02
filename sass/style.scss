@@ -232,10 +232,10 @@ $font2: 'shrikhand', sans serif;
         object-fit: cover;
       }
     }
-    footer{
+    .footer{
         background-color: #353535;
-        padding: 20px 40px;
-        .footer{
+        padding: 20px 0 20px 40px;
+        .footer__bloc{
             display: flex;
             flex-direction: column;
             padding: 1rem;
@@ -356,7 +356,7 @@ $font2: 'shrikhand', sans serif;
             }
         }
     }
-    footer{
-        padding: 1%;
+    .footer{
+        padding: 0;
     }
 }
