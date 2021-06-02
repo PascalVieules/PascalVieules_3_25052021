@@ -123,6 +123,7 @@ body{
         p{
                 opacity: $opacity;
                 margin: 0 0 3% 0;
+                font-size: 0.9em;
             }
         .price{
                 font-weight: bold;
@@ -261,10 +262,11 @@ footer{
         padding-left: 0;
         
         .menu__title{
-            padding-left: 0;
+            padding-left: 2%;
+            width: 90%;
         }
         .heart{
-            margin:0 25px
+            margin:0 5%;
         }
     }
 .menu__parties{

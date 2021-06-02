@@ -133,6 +133,7 @@ body {
 .entrees .button .btn p {
   opacity: 0.6;
   margin: 0 0 3% 0;
+  font-size: 0.9em;
 }
 .entrees .button .btn .price {
   font-weight: bold;
@@ -263,10 +264,11 @@ footer .footer__icon {
     padding-left: 0;
   }
   .menu__restaurant .menu__title {
-    padding-left: 0;
+    padding-left: 2%;
+    width: 90%;
   }
   .menu__restaurant .heart {
-    margin: 0 25px;
+    margin: 0 5%;
   }
 
   .menu__parties .entrees .button {
