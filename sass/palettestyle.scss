@@ -86,7 +86,7 @@ body{
     background-color: $colorbackground2;
     width:30%;
     margin: 0 4% 0 auto;    
-    .trait{
+    /*.trait{
         width: 70px;
         height: 3px;
         background-color: $colortertiary;
@@ -94,13 +94,22 @@ body{
         }
     h2{
        font-family: $font;
-        }
+        }*/
     .operationtitle{
             font-family:$font;
             margin-left: 10%;
             font-size: 26px;
             position: relative;
         }
+    .operationtitle::before{
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 5px;
+        background-color: $colortertiary;
+        left: 0;
+        bottom: -12px;
+    }
     .button{
         width: 85%;
         background-color: $colordefault;
