@@ -4,9 +4,9 @@
     width: 100%;
     animation: loading-spinner-background 2700ms forwards;
     background-color: #ff79da;
-    z-index: 1;
+    z-index: 100;
     transition: animation 2.5s linear 0.5ms;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .loader{
@@ -19,7 +19,7 @@
     height: 100px;
     animation :spin 1.5s linear infinite;
     -moz-animation: spin 1.5s linear infinite;
-
+    -webkit-animation: spin 1.5s linear infinite;
     
     /* placement du loader au milieu de la page */
 
@@ -35,9 +35,13 @@
     @keyframes spin {
         0% {
             transform: rotate(0deg);
+            z-index: 100;
+            opacity: 1;
         }
         100% {
             transform: rotate(360deg);
+            z-index: -100;
+            opacity: 0;
         }
     }
     
@@ -47,5 +51,14 @@
         }
         100%{
             -moz-transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100%{
+            -webkit-transform: rotate(360deg);
         }
     }
