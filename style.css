@@ -7,13 +7,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Couleurs de la Page */
-/* Polices */
-/* Héritage */
-.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button, .command__button .btn__command, .entrees .button {
-  box-shadow: 5px 5px 10px #d3d1d1;
-}
-
 /* Imports SCSS */
 /* Couleurs de la Page */
 /* Polices */
@@ -324,11 +317,17 @@ body {
     z-index: 100;
   }
   100% {
-    translate: -200px, 0px;
     opacity: 0;
     z-index: -100;
   }
 }
+/* Couleurs de la Page */
+/* Polices */
+/* Héritage */
+.eat .restaurant .restaurantcard, .operation .operationcard, .menu .button, .entrees .button, .command__button .btn__command {
+  box-shadow: 5px 5px 10px #d3d1d1;
+}
+
 .logo {
   display: block;
   margin: 10px auto;
@@ -512,11 +511,8 @@ body {
   font-size: 25px;
   opacity: 0.6;
 }
-.eat .restaurant .legend .heart .heart::before {
-  z-index: 1;
-}
 .eat .restaurant .legend .heart:hover {
-  z-index: -1;
+  z-index: 1;
 }
 .eat .photo {
   border-top-left-radius: 20px;
