@@ -261,11 +261,16 @@ body {
   position: fixed;
   height: 100%;
   width: 100%;
-  animation: loading-spinner-background 2700ms forwards;
+  left: 0;
+  top: 0;
   background-color: #ff79da;
-  z-index: 1;
-  transition: animation 2.5s linear 0.5ms;
-  opacity: 0.7;
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .loader {
@@ -278,6 +283,7 @@ body {
   height: 100px;
   animation: spin 1.5s linear infinite;
   -moz-animation: spin 1.5s linear infinite;
+  -webkit-animation: spin 1.5s linear infinite;
   /* placement du loader au milieu de la page */
   margin: auto;
   position: fixed;
@@ -302,6 +308,25 @@ body {
   }
   100% {
     -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+    translate: -200px, 0px;
+    opacity: 0;
+    z-index: -100;
   }
 }
 .logo {
@@ -487,6 +512,12 @@ body {
   font-size: 25px;
   opacity: 0.6;
 }
+.eat .restaurant .legend .heart .heart::before {
+  z-index: 1;
+}
+.eat .restaurant .legend .heart:hover {
+  z-index: -1;
+}
 .eat .photo {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -499,31 +530,31 @@ body {
   background-color: #353535;
   padding: 20px 0 20px 40px;
 }
-.footer .footer__bloc {
+.footer__bloc {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
-.footer .footer__logo {
+.footer__logo {
   color: #fff;
   font-family: "shrikhand", sans serif;
   font-size: 1.2rem;
   margin: 0 0 1rem;
 }
-.footer .footer__list {
+.footer__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.footer .footer__line {
+.footer__line {
   margin: 0.5rem 0;
   font-family: "robotoregular", sans serif;
 }
-.footer .footer__link {
+.footer__link {
   color: #FFF;
   text-decoration: none;
 }
-.footer .footer__icon {
+.footer__icon {
   display: inline-block;
   width: 1.2rem;
   margin-right: 0.5rem;

@@ -222,7 +222,14 @@ $font2: 'shrikhand', sans serif;
                 margin-top: 25px;
                 font-size: 25px;
                 opacity: $opacity;
+                .heart::before{
+                    z-index:1;
+                }
+                &:hover{
+                    z-index:-1;
+                }
             }
+        
           }
       }
       .photo{  
@@ -236,31 +243,31 @@ $font2: 'shrikhand', sans serif;
     .footer{
         background-color: #353535;
         padding: 20px 0 20px 40px;
-        .footer__bloc{
+        &__bloc{
             display: flex;
             flex-direction: column;
             padding: 1rem;
         }
-        .footer__logo{
+        &__logo{
             color: #fff;
             font-family: $font2;
             font-size: 1.2rem;
             margin: 0 0 1rem;
         }
-        .footer__list{
+        &__list{
             list-style: none;
             padding: 0;
             margin: 0;
         }
-        .footer__line{
+        &__line{
             margin: 0.5rem 0;
             font-family: $font;
         }
-        .footer__link{
+        &__link{
             color: $colordefault;
             text-decoration: none;
         }
-        .footer__icon{
+        &__icon{
             display: inline-block;
             width: 1.2rem;
             margin-right: .5rem;
