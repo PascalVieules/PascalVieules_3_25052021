@@ -222,6 +222,12 @@ $font2: 'shrikhand', sans serif;
                 margin-top: 25px;
                 font-size: 25px;
                 opacity: $opacity;
+                .heart::before{
+                    z-index:1;
+                }
+                &:hover{
+                    z-index:-1;
+                }
             }
         
           }

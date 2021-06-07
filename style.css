@@ -261,11 +261,16 @@ body {
   position: fixed;
   height: 100%;
   width: 100%;
-  animation: loading-spinner-background 2700ms forwards;
+  left: 0;
+  top: 0;
   background-color: #ff79da;
-  z-index: 100;
-  transition: animation 2.5s linear 0.5ms;
-  opacity: 0.8;
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .loader {
@@ -292,13 +297,9 @@ body {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    z-index: 100;
-    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
-    z-index: -100;
-    opacity: 0;
   }
 }
 @-moz-keyframes spin {
@@ -315,6 +316,17 @@ body {
   }
   100% {
     -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+    translate: -200px, 0px;
+    opacity: 0;
+    z-index: -100;
   }
 }
 .logo {
@@ -499,6 +511,12 @@ body {
   margin-top: 25px;
   font-size: 25px;
   opacity: 0.6;
+}
+.eat .restaurant .legend .heart .heart::before {
+  z-index: 1;
+}
+.eat .restaurant .legend .heart:hover {
+  z-index: -1;
 }
 .eat .photo {
   border-top-left-radius: 20px;

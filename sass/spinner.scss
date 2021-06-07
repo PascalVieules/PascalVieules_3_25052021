@@ -1,12 +1,17 @@
 .loading-spinner{
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    animation: loading-spinner-background 2700ms forwards;
-    background-color: #ff79da;
-    z-index: 100;
-    transition: animation 2.5s linear 0.5ms;
-    opacity: 0.8;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #ff79da;
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .loader{
@@ -35,13 +40,11 @@
     @keyframes spin {
         0% {
             transform: rotate(0deg);
-            z-index: 100;
-            opacity: 1;
+            
         }
         100% {
             transform: rotate(360deg);
-            z-index: -100;
-            opacity: 0;
+            
         }
     }
     
@@ -62,3 +65,15 @@
             -webkit-transform: rotate(360deg);
         }
     }
+
+        @keyframes loader{
+        0% {
+          opacity: 1;
+          z-index: 100;
+        }
+        100% {
+          translate:(-200px, 0px);
+          opacity:0;
+          z-index:-100;
+}
+      } 
