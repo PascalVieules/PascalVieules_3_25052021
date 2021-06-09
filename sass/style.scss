@@ -202,19 +202,7 @@
                 font-weight: normal;
                 margin-top:0;
             }
-            .heart{
-                margin-top: 25px;
-                font-size: 25px;
-                opacity: $opacity;
-                &far_fa-heart--color{
-
-                }
-                &:hover{
-                    z-index:1;
-                }
-            }
-        
-          }
+        }
       }
       .photo{  
         border-top-left-radius: 20px;
