@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "animations.scss";
 
 
 body{
@@ -49,17 +50,18 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 120px;
+        padding-left: 80px;
     }
     
     h1{
-        font-family: $font2;      
+        font-family: $font2;
+        margin: 2% 0 0 0;      
     }
-    .heart{
+    /*.heart{
         margin:0 10%;
         font-size: 25px;
         opacity: $opacity;
-    }
+    }*/
 }
 
 .menu__parties{
@@ -164,6 +166,14 @@ body{
         }
 
     }
+    .menu__title{
+        h1{
+            margin: 4% 0 0 0;
+        }
+        .heart{
+            margin: 2% 10% 2% 0;
+        }
+    }
     .menu__parties{
         flex-direction: column;
         }
@@ -217,7 +227,9 @@ body{
         justify-content: space-around;
         align-items: center;
         padding-left: 0;
-        
+        h1{
+            margin-top: 6%;
+        }
         .menu__title{
             padding-left: 2%;
             width: 90%;
