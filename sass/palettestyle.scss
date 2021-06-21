@@ -57,11 +57,7 @@ body{
         font-family: $font2;
         margin: 2% 0 0 0;      
     }
-    /*.heart{
-        margin:0 10%;
-        font-size: 25px;
-        opacity: $opacity;
-    }*/
+   
 }
 
 .menu__parties{
@@ -75,15 +71,6 @@ body{
     background-color: $colorbackground2;
     width:30%;
     margin: 0 4% 0 auto;    
-    /*.trait{
-        width: 70px;
-        height: 3px;
-        background-color: $colortertiary;
-        margin: -10px 0 30px 45px;
-        }
-    h2{
-       font-family: $font;
-        }*/
     .operationtitle{
             font-family:$font;
             margin-left: 10%;
@@ -118,14 +105,43 @@ body{
             flex-direction: row;
             justify-content: space-between;
             margin: 0 0 2% 0;
-        p{
+            p{
                 opacity: $opacity;
                 margin: 0 0 3% 0;
                 font-size: 0.9em;
             }
-        .price{
+            .price{
                 font-weight: bold;
             }
+        }
+        &__confirm{
+            background-color: #99e2d0;
+            margin: -1rem -5rem -1rem 1rem;
+            width: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: .5s;
+        }
+        &:hover &__confirm{
+            margin-left: -1rem;
+        }
+        &__icon{
+            height: 1.6rem;
+            width: 1.6rem;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            transform: rotate(180deg);
+            transition-duration: .5s;
+            i {
+                color:#99e2d0;
+            }
+        &:hover &__icon{
+            transform: rotate(0);
+        }
         }
     }
 

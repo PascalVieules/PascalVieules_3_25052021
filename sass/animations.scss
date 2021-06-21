@@ -24,9 +24,26 @@
         .hover-icon{
             color:$colorprimary;
             opacity:1;
-            transition: 1s 0s ease;
+            transition: 0.5s 0s ease;
             z-index: 999;
         }
     }
-    
 }
+/*
+@media only screen and (max-width: 1024px){
+    .heart{
+        &:checked{
+            overflow:hidden;
+            .default-icon{
+                opacity: 0;
+                transition: 1s 0s ease;
+            }
+            .hover-icon{
+                color:$colorprimary;
+                opacity:1;
+                transition: 1s 0s ease;
+                z-index: 999;
+            }
+        }
+    } 
+}*/
