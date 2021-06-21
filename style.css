@@ -42,10 +42,28 @@
 .heart:hover .hover-icon {
   color: #9356dc;
   opacity: 1;
-  transition: 1s 0s ease;
+  transition: 0.5s 0s ease;
   z-index: 999;
 }
 
+/*
+@media only screen and (max-width: 1024px){
+    .heart{
+        &:checked{
+            overflow:hidden;
+            .default-icon{
+                opacity: 0;
+                transition: 1s 0s ease;
+            }
+            .hover-icon{
+                color:$colorprimary;
+                opacity:1;
+                transition: 1s 0s ease;
+                z-index: 999;
+            }
+        }
+    } 
+}*/
 body {
   width: 100%;
   margin: 0;
@@ -91,11 +109,6 @@ body {
   border-top-right-radius: 20px;
   position: relative;
   width: 100%;
-  /*.heart{
-      margin:0 10%;
-      font-size: 25px;
-      opacity: $opacity;
-  }*/
 }
 .menu__restaurant .menu__title {
   display: flex;
@@ -119,15 +132,6 @@ body {
   background-color: #f2f2f2;
   width: 30%;
   margin: 0 4% 0 auto;
-  /*.trait{
-      width: 70px;
-      height: 3px;
-      background-color: $colortertiary;
-      margin: -10px 0 30px 45px;
-      }
-  h2{
-     font-family: $font;
-      }*/
 }
 .entrees .operationtitle {
   font-family: "robotoregular", sans serif;
@@ -171,6 +175,35 @@ body {
 }
 .entrees .button .btn .price {
   font-weight: bold;
+}
+.entrees .button__confirm {
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.entrees .button:hover .entrees .button__confirm {
+  margin-left: -1rem;
+}
+.entrees .button__icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.entrees .button__icon i {
+  color: #99e2d0;
+}
+.entrees .button__icon:hover .entrees .button__icon__icon {
+  transform: rotate(0);
 }
 
 .command__button {
@@ -397,10 +430,28 @@ body {
 .heart:hover .hover-icon {
   color: #9356dc;
   opacity: 1;
-  transition: 1s 0s ease;
+  transition: 0.5s 0s ease;
   z-index: 999;
 }
 
+/*
+@media only screen and (max-width: 1024px){
+    .heart{
+        &:checked{
+            overflow:hidden;
+            .default-icon{
+                opacity: 0;
+                transition: 1s 0s ease;
+            }
+            .hover-icon{
+                color:$colorprimary;
+                opacity:1;
+                transition: 1s 0s ease;
+                z-index: 999;
+            }
+        }
+    } 
+}*/
 .logo {
   display: block;
   margin: 10px auto;
